@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   get "about-us", to: "about#index", as: :about
   # get "about", to: "about#index"
+  get "sign_us", to: "registrations#index"
+  post "sign_us", to: "registrations#create"
 end
